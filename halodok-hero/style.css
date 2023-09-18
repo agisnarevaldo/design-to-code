@@ -1,0 +1,66 @@
+:root {
+  --primary: #101C45;
+  --secondary: #203271;
+  --back: #9BEAE0;
+}
+
+* { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+  text-decoration: none;
+}
+
+body {
+  font-family: Verdana, Geneva, sans-serif;
+}
+
+header {
+  /* background: crimson; */
+  padding: 60px 100px;
+}
+
+nav {
+  display: flex;
+  /* background: cyan; */
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav > .brand {
+  display: flex;
+  /* background-color: coral; */
+}
+nav > .brand > img {
+  height: 24px;
+}
+nav > .brand > h2 {
+  font-size: 18px;
+}
+
+nav > .menu {
+  display: flex;
+  /* background-color: tomato; */
+  gap: 10px;
+}
+nav > .menu > .menu-item {
+  list-style: none;
+}
+.menu .menu-item > a {
+  color: var(--primary);
+}
+
+nav > .head-button {
+  display: flex;
+  gap: 5px;
+}
+
+.head-button > button {
+  padding: 8px 20px;
+  background: none;
+  color: var(--primary);
+}
+
+.head-button > button#btn-login {
+  border: none;
+}
