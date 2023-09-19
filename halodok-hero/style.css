@@ -13,6 +13,15 @@
 
 body {
   font-family: Verdana, Geneva, sans-serif;
+  /* overflow: hidden; */
+}
+
+.rectangle-1 {
+  position: absolute;
+  left: 750px;
+  top: 18px;
+  overflow: visible;
+  z-index: -9;
 }
 
 header {
@@ -20,28 +29,45 @@ header {
   padding: 60px 100px;
 }
 
+.img-model {
+  width: 530px;
+  height: 794px;
+  top: 75px;
+  left: 780px;
+  position: absolute;
+  z-index: -8;
+  /* transform-origin: 0 0; */
+  /* transform: rotate(0deg) scale(-1, 1); */
+}
+
 nav {
   display: flex;
   /* background: cyan; */
   align-items: center;
-  justify-content: space-between;
+  gap: 17px;
+  /* justify-content: space-between; */
 }
 
 nav > .brand {
   display: flex;
+  width: 10%;
+  gap: 10px;
   /* background-color: coral; */
+  align-items: center;
 }
 nav > .brand > img {
   height: 24px;
 }
-nav > .brand > h2 {
+nav > .brand > a {
   font-size: 18px;
+  font-weight: bold;
 }
 
 nav > .menu {
   display: flex;
+  width: 70%;
   /* background-color: tomato; */
-  gap: 10px;
+  gap: 50px;
 }
 nav > .menu > .menu-item {
   list-style: none;
@@ -52,6 +78,7 @@ nav > .menu > .menu-item {
 
 nav > .head-button {
   display: flex;
+  width: 20%;
   gap: 5px;
 }
 
@@ -59,8 +86,70 @@ nav > .head-button {
   padding: 8px 20px;
   background: none;
   color: var(--primary);
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .head-button > button#btn-login {
   border: none;
+}
+
+.head-button > button#btn-book {
+  border: 1px solid var(--primary);
+}
+
+/* Main */
+main {
+  display: flex;
+  /* background: cornflowerblue; */
+  /* width: 70%; */
+  padding-left: 100px;
+  gap: 50px;
+}
+main > .content {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  gap: 15px;
+  /* background-color: coral; */
+}
+main > .content > h1 {
+  font-size: 48px;
+  color: var(--primary);
+}
+main > .content > p {
+  color: var(--primary);
+}
+.content > .cta {
+  padding: 15px 0 ;
+  width: 50%;
+  background-color: var(--primary);
+  color: white;
+  font-weight: bold;
+}
+main > .testimony {
+  display: flex;
+  flex-direction: column;
+  width: 282px;
+  gap: 12px;
+  /* height: 192px; */
+  height: min-content;
+  padding: 20px;
+  background-color: rgba(250, 250, 250, 0.75);
+  border-radius: 10px;
+  box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.10);
+}
+.testimony > .head-testi {
+  display: flex;
+  justify-content: space-between;
+}
+.testimony > .head-testi > figure {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.testimony > .body-testi > p {
+  font-size: 12px;
+  line-height: 20px;
+  color: var(--primary);
 }
