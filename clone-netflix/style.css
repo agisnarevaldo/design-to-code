@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Volkhov:wght@700&display=swap');
+
+:root {
+  --main-bg-color: #1A1C22;
+  --text-color: #FEF4F4;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; text-decoration: none;}
+
+.btn-primary {
+  color: #FEF4F4;
+  font-family: Montserrat;
+  padding: 9px 28px;
+  border-radius: 15px;
+  background: linear-gradient(96deg, #BC0E19 7.77%, #DB202C 91.68%);
+  box-shadow: 0px 5px 25px 0px rgba(192, 30, 41, 0.50);
+  border: none;
+  cursor: pointer;
+}
+
+body {
+  background-color: var(--main-bg-color);
+}
+
+nav {
+  display: flex;
+  /* background-color: cornsilk; */
+  /* border: 1px solid cornsilk; */
+  justify-content: space-between;
+  margin: 40px 80px;
+  align-items: center;
+}
+.nav-menu {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-menu > a{
+  color: var(--text-color);
+  font-family: Montserrat;
+
+}
+
+.nav-buttons > select {
+  background: none;
+  cursor: pointer;
+  color: var(--text-color);
+  border: none;
+}
