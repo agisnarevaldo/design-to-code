@@ -62,9 +62,17 @@ nav {
 /* Main */
 main {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  gap: 150px;
   color: var(--text-color);
+}
+section {
   padding: 0 40px;
+
+}
+.hero-section {
+  display: flex;
+  align-items: center;
   gap: 60px;
   /* background-color: cornflowerblue; */
 }
@@ -85,14 +93,14 @@ main > .left {
   font-weight: bold;
 }
 .left h1 {
-  font-size: 2.8em;
+  font-size: 2.5em;
   font-weight: bold;
   text-align:left;
 }
 .left p {
   /* margin-bottom: 20px; */
   font-family: Montserrat;
-  font-size: 1.5em;
+  /* font-size: 1.5em; */
 }
 
 main > .right {
@@ -129,4 +137,65 @@ main > .right {
   height: 700px;
   /* width: 500px; */
   position: relative;
+}
+
+/* Services */
+.services .service-title {
+  margin: 0 auto;
+  width: 50%;
+}
+.services h1 {
+  text-align: center;
+/* Tittle */
+  font-family: Volkhov;
+/* font-size: 40px; */
+  font-size: 2.5em;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 180%; /* 180% */
+/* letter-spacing: -0.6px; */
+  margin-bottom: 40px;
+  /* width: 50%; */
+}
+
+.services > .container {
+  display: flex;
+  gap: 25px;
+}
+.services .card {
+  display: flex;
+  /* width: max-content; */
+  /* display: inline-flex; */
+  flex-direction: column;
+  width: 250px;
+  background-color: #1F2127;
+  border-radius: 30px;
+  padding: 24px;
+  gap: 15px;
+  /* justify-content: space-between; */
+  /* height: min-content; */
+}
+
+.container > .card > img {
+  width:50px;
+}
+
+.container > .card > .card-title {
+  /* font-size: 18px; */
+  font-family: Montserrat;
+  font-style: normal;
+  /* background-color: coral; */
+  /* font-weight: bold; */
+  /* font-weight: 500; */
+  /* line-height: 30px; /* 166.667% */ 
+  letter-spacing: -0.27px;
+}
+.container > .card .card-desc {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: lighter;
+  /* line-height: 30px; /* 214.286% */ 
+  letter-spacing: -0.21px;
+  text-align: justify;
 }
