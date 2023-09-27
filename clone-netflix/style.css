@@ -3,6 +3,13 @@
 :root {
   --main-bg-color: #1a1c22;
   --text-color: #fef4f4;
+  /* Fonts */
+  --smalltitle: 500 18px/30px "Montserrat", sans-serif;
+  --display: 700 56px/80px "Volkhov", sans-serif;
+  --paragraph: 400 16px/30px "Montserrat", sans-serif;
+  --tittle: 700 40px/72px "Volkhov", sans-serif;
+  --subtittle: 600 20px/36px "Montserrat", sans-serif;
+  --detail: 300 14px/30px "Montserrat", sans-serif;
 }
 
 * {
@@ -176,14 +183,27 @@ section {
   width: max-content;
   /* font-weight: bold; */
 }
-.left h1 {
-  font-size: 2.5em;
-  font-weight: bold;
+.display {
+  /* font-size: 2.5em; */
+  /* font-weight: bold; */
   text-align: left;
+  font-family: Volkhov;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 80px; /* 142.857% */
+  letter-spacing: -0.84px;
 }
 .left p {
-  /* margin-bottom: 20px; */
+  color: #e3e1e1;
   font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 187.5% */
+  letter-spacing: -0.24px;
+  /* margin-bottom: 20px; */
+  /* font-family: Montserrat;  */
   /* font-size: 1.5em; */
 }
 
@@ -292,14 +312,21 @@ section {
   padding: 24px;
 }
 
-.paket-card > ul > li {
-  display: flex;
-  gap: 10px;
+.paket-card > .paket-title {
+  text-align: center;
 }
+
 .paket-card > .paket-price {
   display: flex;
   align-items: baseline;
 }
+
+.paket-card > ul > li {
+  display: flex;
+  gap: 10px;
+  width: 300px;
+}
+
 .price {
   color: #db202c;
 
@@ -310,4 +337,41 @@ section {
   font-weight: 600;
   line-height: 50px; /* 156.25% */
   letter-spacing: -0.48px;
+}
+
+/* subscribe section */
+.subscribe-section {
+  padding: 20px;
+  border-radius: 30px;
+  background: #C8CFEC;
+  display: flex;
+  flex-direction: column; 
+  height: max-content;
+  text-align: center;
+}
+
+.subscribe-section > p {
+  color: #1a1c22;
+  font-size: 20px;
+}
+
+/* Footer */
+footer {
+  background-color: cornflowerblue;
+  margin: 0 80px;
+  margin-top: 150px;
+
+}
+
+.row {
+  display: flex;
+}
+
+.copy {
+  justify-content: space-between;
+}
+
+footer .detail {
+  font: var(--detail);
+  
 }
