@@ -16,7 +16,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-decoration: none;
+  /* text-decoration: none; */
   list-style: none;
 }
 
@@ -31,6 +31,10 @@ h4 {
   font-weight: 600;
   line-height: 36px; /* 180% */
   letter-spacing: -0.3px;
+}
+
+a {
+  text-decoration: none;
 }
 
 .body-p {
@@ -77,6 +81,7 @@ h4 {
   display: flex;
   /* gap: 25px; */
   justify-content: space-between;
+  margin-top: 20px;
 }
 .container .card {
   display: flex;
@@ -182,6 +187,7 @@ section {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  /* justify-content: space-between; */
 }
 .txt-hero > button {
   width: max-content;
@@ -312,8 +318,14 @@ section {
   flex-direction: column;
   gap: 15px;
   background-color: #1f2127;
+  border: 1px solid #1F2127;
   border-radius: 30px;
   padding: 24px;
+}
+
+.paket-card:hover {
+  border: 1px solid #FEF4F4;
+  background: linear-gradient(168deg, #1F2127 3.06%, #373A43 47.56%, #1F2127 96.94%);
 }
 
 .paket-card > .paket-title {
@@ -329,6 +341,10 @@ section {
   display: flex;
   gap: 10px;
   width: 300px;
+}
+
+.paket-card .no-img {
+  opacity: 0;
 }
 
 .price {
@@ -389,12 +405,18 @@ footer {
 
 .row {
   display: flex;
-  gap: 5px;
+  gap: 15px;
 }
 
 .nav-row a{
   color: var(--text-color);
   font: var(--paragraph);
+}
+
+.cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .copy {
@@ -409,7 +431,7 @@ footer .detail {
   background-color: var(--text-color);
   display: flex;
   border-radius: 15px;
-  padding: 5px;
+  padding: 12px;
 }
 
 .btn-store .a {
