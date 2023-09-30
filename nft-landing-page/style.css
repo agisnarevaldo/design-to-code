@@ -1,0 +1,113 @@
+:root {
+  --primary: #5C3EAF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  background: #141414;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  /* margin: 0 50px; */
+  padding: 10px 50px;
+}
+
+nav > .brand {
+  display: flex;
+  align-items: center;
+}
+
+nav > ul {
+  display: flex;
+  gap: 10px;
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+  color: white;
+
+}
+
+nav > .btn-wallet {
+  background-color: var(--primary);
+  display: flex;
+  gap: 10px;
+  padding: 15px 24px;
+  border-radius: 15px;
+  color: #FFF;
+  border: none;
+}
+
+main {
+  text-align: center;
+}
+
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+
+.hero-content {
+  position: absolute;
+  /* top: 0; */
+  /* left: 0; */
+  /* right: 0; */
+  /* bottom: 0; */
+  /* margin: auto; */
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.txt-show {
+  /* position: absolute; */
+  /* left: 20%; */
+  /* top: 50%; */
+  color: white;
+  text-align: center;
+  font-family: Inter;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  background: linear-gradient(180deg, #5C3EAF 0%, #D279F5 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 665px;
+}
+
+.btn-search {
+  /* position: absolute; */
+  display: flex;
+  align-items: center;
+  width: max-content;
+  /* top: 70%; */
+  /* background-color: var(--primary); */
+  display: flex;
+  gap: 10px;
+  padding: 15px 24px;
+  border-radius: 15px;
+  color: #FFF;
+  border: none;
+  /* border-radius: 40px; */
+  border: 1px solid #FFF;
+  background: linear-gradient(122deg, #FFF -125.51%, rgba(255, 255, 255, 0.00) 114.64%);
+}
+
