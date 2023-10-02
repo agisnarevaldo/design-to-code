@@ -58,11 +58,14 @@ nav > .btn-wallet {
 
 main {
   text-align: center;
+  margin: 0 50px;
 }
 
 .slideshow-container {
   position: relative;
   margin: auto;
+  overflow: hidden;
+  border-radius: 0px 0px 30px 30px;
 }
 
 .hero-content {
@@ -123,14 +126,15 @@ main {
 }
 
 section {
-  background: linear-gradient(
+  /* background: linear-gradient(
     180deg,
     rgba(151, 71, 255, 0.47) -75.4%,
     rgba(210, 121, 245, 0.06) 100%
-  );
+  ); */
   display: flex;
-  justify-content: space-between;
-  height: max-content;
+  justify-content: space-evenly;
+  margin: 30px 0;
+  /* height: max-content; */
 }
 
 section > .card {
@@ -156,7 +160,7 @@ section > .card {
   display: flex;
 }
 
-.price-card {
+.price {
   display: flex;
   justify-content: space-between;
 }
@@ -173,6 +177,46 @@ section > .card {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
-  background: #5C3EAF;
+  background: #5c3eaf;
   border: none;
+}
+
+section > .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  /* background: #5c3eaf; */
+  gap: 20px;
+}
+
+.container > h2 {
+  text-align: left;
+}
+
+.container > a {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  justify-content: end;
+}
+
+.container ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.container li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  border-radius: 10 px;
+  border-radius: 12px;
+  background: linear-gradient(
+    138deg,
+    rgba(255, 255, 255, 0.43) -196.41%,
+    rgba(255, 255, 255, 0) 122.07%
+  );
 }
