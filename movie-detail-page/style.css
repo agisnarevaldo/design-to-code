@@ -58,6 +58,7 @@ nav > ul > li a:hover {
   font-size: 16px;
   padding: 14px 0;
   color: #cdcdcd;
+  width: 100%;
 }
 
 .search-bar > input:focus {
@@ -65,10 +66,10 @@ nav > ul > li a:hover {
   color: white;
 }
 
-.btn-sign {
-  display: flex;
-  gap: 33px;
-}
+/* .btn-sign { */
+/*   display: flex; */
+/*   gap: 33px; */
+/* } */
 
 .btn-sign {
   padding: 10px 20px;
@@ -76,7 +77,7 @@ nav > ul > li a:hover {
   border-radius: 12px;
   border: none;
   cursor: pointer;
-  display: inline;
+  min-width: max-content;
 }
 
 #sign-in {
@@ -93,7 +94,7 @@ main {
   display: flex;
   padding: 18px 81px;
   margin: 20px 0;
-  gap: 81px;
+  gap: 40px;
   justify-content: space-between;
 }
 
@@ -108,12 +109,14 @@ main > figure {
   /* margin-bottom: 32px; */
 }
 
-#btn-trailer {
+.btn-dark {
+  cursor: pointer;
+  font-size: 14px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 9px;
-  padding: 10px;
+  padding: 12px 18px;
   border-radius: 29px;
   /* background: var(--bg); */
   border: none;
@@ -136,9 +139,94 @@ main > figure {
 }
 
 
+section {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.title {
+  font-size: 40px;
+}
+.cta {
+  display: flex;
+  gap: 20px;
+}
+.cta > button {
+  font-size: 20px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  width: 29%;
+  cursor: pointer;
+  min-width: max-content;
+  /* min-width: 212px; */
+}
 
+.row {
+  justify-content: space-between;
+  gap: 30px;
+}
 
+.storyline {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 
+.desc {
+  text-align: justify;
+}
+
+.storyline th {
+  text-align: left;
+}
+
+.profile {
+  min-width: 240px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.profile > figure {
+  display: flex;
+  border-radius: 15px;
+  background: rgba(217, 217, 217, 0.08);
+  padding: 15px;
+  gap: 15px;
+  /* justify-content: space-between; */
+}
+
+.profile > figure > figcaption {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.name {
+  font-size: 16px;
+}
+.job {
+  font-weight: 400;
+  color: #878787;
+  font-size: 14px;
+}
+
+.profile > a {
+  text-align: right;
+  color: var(--blue);
+}
+
+#line {
+  height: 2px;
+  width: 100%;
+  background-color: #242E43;;
+}
+
+.like {
+  display: flex;
+  gap: 20px;
+}
 
 
 

@@ -22,14 +22,14 @@
         <i class="fa-solid fa-magnifying-glass" style="color: #cdcdcd;"></i>
         <input type="text" name="Search" placeholder="Search...">
       </div>
-      <button id="sign-in" class="btn-sign">SignIn</button>
-      <button id="sign-up" class="btn-sign">SignUp</button>
+      <button id="sign-in" class="btn-sign">Sign In</button>
+      <button id="sign-up" class="btn-sign">Sign Up</button>
     </nav>
 
     <main>
       <figure>
         <img class="img-movie" src="img/op-banner.png" alt="one piece">
-        <button id="btn-trailer"><img src="img/bx_movie.svg" alt="play">Trailer</button>
+        <button class="btn-dark"><img src="img/bx_movie.svg" alt="play">Trailer</button>
         <div class="wrap">
           <a href="" class="add-to">
             <i class="fa-solid fa-star" style="color: #757575;"></i>
@@ -47,41 +47,42 @@
       </figure>
       
       <section>
-        <h2>One Piece Film: Red</h2>
+        <h2 class="title">One Piece Film: Red</h2>
         <div class="cta">
           <button id="btn-watch">
             <i class="fa-solid fa-play"></i>
             Watch
           </button>
-          <button type="btn-down">
+          <button id="btn-down">
             <i class="fa-solid fa-cloud-arrow-down" style="color: #1d4ed8;"></i>
             Download
           </button>
         </div>
-        <div class="wrap">
+        
+        <div class="wrap row">
           <div class="storyline">
             <p>STORYLINE</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Laoreet condimentum nec porttitor felis enim aliquet nibh. Commodo fringilla accumsan, elit, elementum ullamcorper. Tempus non, semper eget adipiscing aenean sit pharetra ipsum cursus.</p>
+            <p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Laoreet condimentum nec porttitor felis enim aliquet nibh. Commodo fringilla accumsan, elit, elementum ullamcorper. Tempus non, semper eget adipiscing aenean sit pharetra ipsum cursus.</p>
             <table>
               <tr>
-                <th>Rating</th>
-                <td>8.9</td>
+                <td>Rating</td>
+                <th>8.9</th>
               </tr>
               <tr>
-                <th>Release year</th>
-                <td>2022</td>
+                <td>Release year</td>
+                <th>2022</th>
               </tr>
               <tr>
-                <th>Genre</th>
-                <td>Adventure, Fantasy</td>
+                <td>Genre</td>
+                <th>Adventure, Fantasy</th>
               </tr>
               <tr>
-                <th>Coutry</th>
-                <td>Japan</td>
+                <td>Coutry</td>
+                <th>Japan</th>
               </tr>
               <tr>
-                <th>Duration</th>
-                <td>2 hours <sup>+</sup></td>
+                <td>Duration</td>
+                <th>2 hours <sup>+</sup></th>
               </tr>
             </table>
           </div>
@@ -90,12 +91,27 @@
             <figure>
               <img src="img/pp.svg" alt="photo">
               <figcaption>
-                <p>Eiichiro Oda</p>
-                <p>Official Creator & manga artist</p>
+                <p class="name">Eiichiro Oda</p>
+                <p class="job">Official Creator & manga artist</p>
               </figcaption>
-              <a href="#">See all</a>
             </figure>
+            <a href="#">See all</a>
           </div>
+        </div>
+        
+        <span id="line"></span>
+        <div class="like">
+        
+          <button class="btn-like btn-dark">
+            <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+            <i class="fa-solid fa-heart" style="color: #525252;"></i>
+            +1
+          </button>
+          <button class="btn-like btn-dark">
+            <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
+            <i class="fa-solid fa-thumbs-up" style="color: #525252;"></i>
+            1.5k
+          </button>
         </div>
       </section>
     </main>
