@@ -88,3 +88,64 @@ nav > ul > li a:hover {
   color: white;
   background-color: var(--blue);
 }
+
+main {
+  display: flex;
+  padding: 18px 81px;
+  margin: 20px 0;
+  gap: 81px;
+  justify-content: space-between;
+}
+
+main > figure {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.img-movie {
+  border-radius: 27px;
+  /* margin-bottom: 32px; */
+}
+
+#btn-trailer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+  padding: 10px;
+  border-radius: 29px;
+  /* background: var(--bg); */
+  border: none;
+  color: var(--blue);
+  background: rgba(255, 255, 255, 0.06);
+  /* margin-bottom: 50px; */
+}
+
+.wrap {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.add-to {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #FFF;
+  gap: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
