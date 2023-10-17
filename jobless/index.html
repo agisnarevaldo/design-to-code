@@ -7,9 +7,9 @@
     <link href="style.css" rel="stylesheet">
   </head>
   <body>
-    <nav>
+    <nav class="flex">
       <h2 class="brand">Jobless</h2>
-      <ul>
+      <ul class="flex">
         <li><a href="#" class="a-actived">Home</a></li>
         <li><a href="#">Discover</a></li>
         <li><a href="#">Post a Job</a></li>
@@ -20,11 +20,13 @@
 
     <main>
       <div class="hero-section">
-        <h2>Get Connected to the Best Remote Jobs in Your Field</h2>
-        <p>Discover a wide range of remote opportunities on our platform and take control of your career</p>
+        <div class="txt-hero">
+          <h2>Get Connected to the Best Remote Jobs in Your Field</h2>
+          <p>Discover a wide range of remote opportunities on our platform and take control of your career</p>
+        </div>
         <div class="cta flex">
-          <button>Explore Remote Jobs</button>
-          <button> How it works?</button>
+          <button id="explore">Explore Remote Jobs</button>
+          <button id="how"> How it works?</button>
         </div>
       </div>
 
@@ -33,9 +35,12 @@
         <div class="wrap-card flex">
           <div class="card">
             <div class="head-card flex">
-              <img src="" alt="">
-              <div class="job-title">
-                
+              <div class="icon">
+                <img src="img/figma.svg" alt="figme">
+              </div>
+              <div class="job">
+                <p class="job-title">Front-End Developer</p>
+                <p>Figma</p>
               </div>
             </div>
 
@@ -58,9 +63,12 @@
 
           <div class="card">
             <div class="head-card flex">
-              <img src="" alt="">
+              <div class="icon">
+                <img src="img/figma.svg" alt="figme">
+              </div>
               <div class="job-title">
-                
+                <p>Front-End Developer</p>
+                <p>Figma</p>
               </div>
             </div>
 
@@ -83,9 +91,12 @@
 
           <div class="card">
             <div class="head-card flex">
-              <img src="" alt="">
+              <div class="icon">
+                <img src="img/figma.svg" alt="figme">
+              </div>
               <div class="job-title">
-                
+                <p>Front-End Developer</p>
+                <p>Figma</p>
               </div>
             </div>
 
@@ -105,6 +116,7 @@
               </div>
             </div>
           </div>
+
         </div>
       </section>
     </main>
