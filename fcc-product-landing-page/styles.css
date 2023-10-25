@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; 
+  position: fixed;
+  top: 0;
+  background-color: white;
+  width: 100%;
+  /* background-color: aliceblue; */
+}
+
+#header-image {
+  width: 100%;
+  max-width: 300px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  gap: 2rem;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1000px;  
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* section {
+  display: flex;
+} */
+
+#hero {
+  width: 100%;
+  text-align: center;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 65px;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+#form input[type='email'] {
+  width: max-content;
+  padding: 5px 15px;
+}
+
+.btn {
+  width: max-content;
+  background-color: blue;
+  color: wheat;
+  border: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 2em;
+  text-align: center;
+}
+
+section#features {
+  /* display: flex;
+  flex-direction: column; */
+  /* text-align: center; */
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  /* background-color: aquamarine; */
+  align-items: center;
+  min-width: max-content;
+  margin: 10px auto;
+  padding: 10px 60px;
+  /* gap: 20px; */
+}
+
+.desc {
+  display: flex;
+  flex-direction: column;
+}
+
+.fa-solid {
+  /* font-weight: 900; */
+  font-size: 3em;
+}
+
+#how-it-works {
+  display: flex;
+  flex-direction: column;
+}
+
+#how-it-works > iframe {
+  width: 100%;
+  border-radius: 20px;
+  /* height: 100%; */
+  /* max-width: 560px; */
+}
+
+#prices {
+  display: flex;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100% / 3);
+  margin: 10px;
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 10px 0;
+}
+
+footer {
+  margin-top: 30px;
+  background-color: #ddd;
+  padding: 20px;
+  width: 100%;
+}
+
+footer > ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer > ul > li {
+  padding: 0 10px;
+}
+
+footer > span {
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.9em;
+  color: #444;
+}
+
+@media (max-width: 800px) {
+  .flex {
+    min-width: min-content;
+    gap: 10px;  
+  }
+  #prices {
+    flex-direction: column;
+  }
+  .card {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
