@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap');
+
+* {margin: 0; padding: 0; box-sizing: border-box;}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: #0C0F15;;
+  color: #BBB;
+  font-family: 'Roboto', sans-serif;
+}
+
+section {
+  margin: 20px auto;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  background-color: #0C0F15;
+}
+
+#navbar a {
+  font-size: 18px;
+}
+
+/* .logo { */
+/*   background-color: #038CF5; */
+/*   padding: 8px 12px; */
+/* } */
+
+.logo a {
+  font-weight: bold;
+  color: white;
+}
+
+#navbar ul {
+  display: flex;
+  gap: 35px;
+}
+
+#navbar ul li {
+  list-style: none;
+}
+
+#navbar ul li a {
+  color: #BBB;
+}
+
+#navbar ul li a:hover {
+  color: #038CF5;
+}
+
+
+section#welcome-section {
+  /* background-color: black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.wrap > span {
+  font-size: 150px;
+  font-weight: bold;
+}
+
+.wrap h1 {
+  font-size: 75px;
+  color: #038CF5;
+}
+
+.wrap p {
+  /* text-align: justify; */
+  font-size: 24px;
+}
+
+#projects {
+  padding: 0 40px;
+  height: 100vh;
+}
+
+.projects-header {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+  text-align: center;
+  row-gap: 20px;
+} 
+
+.projects-grid img {
+  width: 400px;
+}
+
+.project-title {
+  font-size: 20px;
+}
+
+.code {
+  color: yellow;
+}
+
+#contact {
+  text-align: center;
+}
+
+.contact-header h2 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 20px;
+  text-decoration: underline;
+}
+
+.contact-link {
+  display: flex;
+  gap: 20px;
+  justify-content: space-evenly;
+}
+
+#contact a {
+  font-size: 2rem;
+  color: #bbb;
+  margin: 20px auto;
+}
+
+footer {
+  font-weight: 300;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem;
+  background: var(--main-gray);
+  border-top: 4px solid #BBB
+}
+
+footer > p {
+  margin: 2rem;
+}
+
+footer i {
+  vertical-align: middle;
+}
