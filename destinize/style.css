@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --light-primary: #4475F2;
+  --dark-primary: #181E4B;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* nav { */
+/*   display: flex; */
+/*   flex-direction: column; */
+/* } */
+
+.line {
+  height: 1px;
+  width: 100%;
+  background-color: #F0F1F2;
+  display: block;
+}
+
+.container {
+  display: flex;
+  margin: 0 123px;
+  padding: 24px 0;
+  align-items: center;
+  /* background-color: tan; */
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  /* background-color: crimson; */
+  gap: 10px;
+}
+
+#search {
+  padding: 12px 22px;
+  width: 100%;
+  /* margin: 0 20px; */
+  border-radius: 30px;
+  border: none;
+  background-color: #F0F1F2;
+}
+
+select {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  /* padding: 10px; */
+}
+
+.lang, .lokasi {
+  display: flex;
+  align-items: center;
+}
+
+.lang select, .lokasi select {
+}
+
+.category {
+  display: flex;
+  /* background-color: teal; */
+  width: 100%;
+  gap: 40px;
+}
+
+.buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.buttons button {
+  font-size: 20px;
+  display: flex;
+  padding: 5px 10px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+button#bag {
+  background-color: var(--light-primary);
+  color: white;
+}
+
+
+
+
+

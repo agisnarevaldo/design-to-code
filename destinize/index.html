@@ -2,11 +2,84 @@
 <html lang="en">
   <head>
     <title>Destinize</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="./style.css" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="./style.css" rel="stylesheet" />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
   </head>
   <body>
-  
+    <nav>
+      <div class="container">
+        <div class="logo">
+          <img src="assets/logo.svg" alt="logo" />
+          <h2>Destinize</h2>
+        </div>
+        <input
+          id="search"
+          type="text"
+          name="search"
+          placeholder="Cari apapun di sini.."
+        />
+
+        <div class="lang">
+          <i class="bi bi-globe"></i>
+          <select>
+            <option value="in">Bahasa Indonesia</option>
+            <option value="en">English</option>
+          </select>
+        </div>
+        <div class="lokasi">
+          <i class="bi bi-geo-alt"></i>
+          <select>
+            <option value="id-yogya">Indonesia, Yogya</option>
+          </select>
+        </div>
+      </div>
+
+      <span class="line"></span>
+
+      <div class="container">
+        <div class="category">
+          <select>
+            <option value="gunung">Gunung</option>
+          </select>
+          <select>
+            <option value="gunung">Pantai</option>
+          </select>
+          <select>
+            <option value="gunung">Kuliner</option>
+          </select>
+          <select>
+            <option value="gunung">Outbond</option>
+          </select>
+          <select>
+            <option value="gunung">Sejarah</option>
+          </select>
+          <select>
+            <option value="gunung">Edukasi</option>
+          </select>
+          <select>
+            <option value="gunung">Romantis</option>
+          </select>
+          <select>
+            <option value="gunung">Alam</option>
+          </select>
+        </div>
+
+        <div class="buttons">
+          <button id="bag">
+            <i class="bi bi-bag-fill"></i>
+          </button>
+          <button>
+            <i class="bi bi-person"></i>
+          </button>
+        </div>
+      </div>
+    </nav>
   </body>
 </html>
