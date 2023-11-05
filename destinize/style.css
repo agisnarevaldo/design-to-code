@@ -3,12 +3,24 @@
 :root {
   --light-primary: #4475F2;
   --dark-primary: #181E4B;
+  --text-color: #5E6282;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+ a {
+  text-decoration: none;
 }
 
 /* nav { */
@@ -129,6 +141,69 @@ button#user {
   color: var(--light-primary);
 }
 
+button#mulai {
+  background-color: var(--light-primary);
+  padding: 15px 20px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+}
 
+button#putar {
+  padding: 15px 20px;
+  border: none;
+  background: transparent;
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--text-color);
+}
+
+.bi-play-fill {
+  padding: 5px 8px;
+  border: 1px solid var(--text-color);
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+section {
+  margin: 0 100px;
+}
+
+section#partner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: coral; */
+}
+
+section#favorite >header {
+  display: flex;
+  /* background-color: crimson; */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--light-primary);
+}
+
+.caption {
+  color: #14183E;
+/* font-family: Manrope; */
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 50px; /* 138.889% */
+  letter-spacing: -0.36px;
+}
+
+.wrap {
+  display: flex;
+  justify-content: space-between;
+}
 
 
