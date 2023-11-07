@@ -23,6 +23,10 @@ button {
   text-decoration: none;
 }
 
+li {
+  list-style: none;
+}
+
 /* nav { */
 /*   display: flex; */
 /*   flex-direction: column; */
@@ -168,7 +172,7 @@ button#putar {
 }
 
 section {
-  margin: 0 100px;
+  margin: 30px 100px;
 }
 
 section#partner {
@@ -203,7 +207,128 @@ section#favorite >header {
 
 .wrap {
   display: flex;
+  /* justify-content: space-between; */
+  gap: 30px;
+}
+
+.mark {
+  min-width: 278.462px;
+  min-height: 392.365px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.txt {
+  border-radius: 0px 6px 0px 0px;
+  background: rgba(255, 255, 255, 0.70);
+  backdrop-filter: blur(5px);
+  width: 50%;
+  padding: 10px 0;
+  padding-left: 15px;
+}
+
+.txt p {
+  color: #80918E;
+}
+
+#rajaampat {
+  background: url(assets/rajaampat.png);
+}
+
+#labuanbajo {
+  background: url(assets/labuanbajo.png);
+}
+
+#kawahijen {
+  background: url(assets/kawahijen.png);
+}
+
+#bromo {
+  background: url(assets/bromo.png);
+}
+
+.left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+ul.how {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  color: var(--text-color);
+}
+
+ul.how li {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+ul.how li .icon{
+  display: flex;
+  align-items: center;
+  padding: 8px 10px;
+  height: max-content;
+  border-radius: 13px;
+  background-color: #EFE0B4;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+ul.how span {
+  font-weight: bold;
+}
+
+.right {
+  width: max-content;
+}
+
+.card {
+  /* background-color: white; */
+  z-index: 1;
+  padding: 20px 25px;
+  border-radius: 26px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+box-shadow: 0px 1.85185px 3.14815px 0px rgba(0, 0, 0, 0.00), 0px 8.14815px 6.51852px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.51852px 25.48148px 0px rgba(0, 0, 0, 0.01), 0px 64.81481px 46.85185px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02);
+}
+
+.card > img {
+  width: 344.628px;
+  height: 172.851px;
+  border-radius: 22px;
+}
+
+.card .info {
+  display: flex;
   justify-content: space-between;
 }
 
+.card .options i {
+  padding: 10px;
+  background-color: var(--circle, #F5F5F5);
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 5px;
+}
 
+.ongoing {
+  display: flex;
+  gap: 10px;
+  position: relative;
+  float: right;
+  bottom: 40%;
+  left: 30%;
+  padding: 15px 20px;
+  border-radius: 18px;
+  box-shadow: 0px 1.85185px 3.14815px 0px rgba(0, 0, 0, 0.00), 0px 8.14815px 6.51852px 0px rgba(0, 0, 0, 0.01), 0px 20px 13px 0px rgba(0, 0, 0, 0.01), 0px 38.51852px 25.48148px 0px rgba(0, 0, 0, 0.01), 0px 64.81481px 46.85185px 0px rgba(0, 0, 0, 0.02), 0px 100px 80px 0px rgba(0, 0, 0, 0.02);
+  z-index: 5;
+
+}
