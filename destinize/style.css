@@ -182,7 +182,7 @@ section#partner {
   /* background-color: coral; */
 }
 
-section#favorite >header {
+section#favorite >header, section#galeri > header {
   display: flex;
   /* background-color: crimson; */
   justify-content: space-between;
